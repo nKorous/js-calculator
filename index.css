@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculatorContainer {
+    border: 2px ridge black;
+    box-shadow: 0px 5px 13px black;
+    height: 80%;
+    width: 30%;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+}
+
+.displayContainer {
+    width: 97%;
+    height: 15%;
+    border: 3px double black;
+    margin: 1%;
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    font-size: 100px;
+}
+
+.numbersContainer {
+    width: 93%;
+    height: 78%;
+    border: 5px double black;
+    margin: 5px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px; 
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+button {
+    min-height: 15%;
+    max-height: 15%;
+    min-width: 20%;
+    max-width: 20%;
+    margin: 2%;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+}
+
+#historyContainer {
+    width: 30%;
+    height: 90%;
+    border: 1px black pink;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 3%;
+    right: 2%;
+}
+
+.closeButton {
+    float: right;
+    border: 0px;
+    background-color: white;
+    min-height: 5%;
+    min-width: 10%;
+}
+
+.closeButton:hover {
+    border: 1px solid black;
+}
+
+.equationHistory h1 {
+    text-align: center;
+}

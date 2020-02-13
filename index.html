@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator</title>
+    <link rel='stylesheet' href='./index.css'>
+    <script type='text/javascript' module src='./index.js'></script>
+</head>
+
+<body>
+    <div class='calculatorContainer'>
+        <!-- The digits for the calculator are displayed here -->
+        <input id='display' type='text' value='' disabled class='displayContainer'>
+
+        <!-- The input buttons are in this container -->
+        <div id='numbersContainer' class='numbersContainer'></div>
+    </div>
+
+    <div id='historyContainer' hidden='true'>
+        <button class='closeButton' onclick='showHistoryContainer();'>X</button>
+        <div class='equationHistory'>
+            <h1>History</h1>
+
+            <!-- The list of historical equations and their answers, if any, are here-->
+            <ul id='equationHistory'></ul>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        //Anything that uses document.getElement or needs to be referenced here
+        resetDisplayValue()
+        createNumberButtons()
+        createHistoryDisplay()
+    </script>
+</body>
